@@ -32,6 +32,24 @@
         font-family: "JetBrainsMono Nerd", monospace;
         line-height: 1.4;
       }
+
+      :root {
+        color-scheme: light dark;
+        --bg: #ffffff;
+        --fg: #000000;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #000000;
+          --fg: #ffffff;
+        }
+      }
+
+      body {
+        background: var(--bg);
+        color: var(--fg);
+      }
     </style>
   </head>
   <body>
